@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoichoi clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <div class="container-fluid ">
+    <div class="row main">
+      <div class="col 12 m-0 p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="/imgs/hoichoilogo2.png" height="60px" width="140px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movie.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Free</a>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-md-9 col-sm-12"></div>
+                <div class="col-md-3 col-sm-12">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                      <a href="#"><i class="fa-solid fa-magnifying-glass" id="search"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a id="login" href="#">LOGIN</a>
+                    </li>
+                    <a href="#"><button class="btn btn " id="button" style="background-color: #F4181C; color:white;">
+                        SUBSCRIBE</button></a>
+                    <li class="nav-item">
+                      <a href="#"> <i class="fa-solid fa-bars pl-5" id="bar" style="color: white;"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="row mt-5 m-0 p-0">
+          <div class="col-12 m-0 p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/imgs/talmar2.avif" height="400px" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="link-area">
+                      <a href="https://www.hoichoi.tv/" target="_blank"><i class="fa-solid fa-play"> </i> Subscribe To
+                        Watch</a>   
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/imgs/1728308983757_kaberi_2560x720_xdolby_32x9Images.webp"
+                    height="400px" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="link-area">
+                      <a href="https://www.hoichoi.tv/" target="_blank"><i class="fa-solid fa-play"></i> Subscribe To
+                        Watch</a><i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/imgs/feludar-goyendagiri.jpeg" height="400px" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="link-area">
+                      <a href="https://www.hoichoi.tv/" target="_blank"><i class="fa-solid fa-play"></i>Subscribe To
+                        Watch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bgimg">
+      <div class="container">
+        <h3 style="color: white;">Just Added </h3>
+        <div class="col-12 ">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box" id="hey">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>kishmis</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Kishmis</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="" height="300px">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="" height="300px">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Play Station">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Speaker">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Galaxy">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="iPhone">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Canon">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Pixel">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Watch">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bgimg">
+      <div class="container">
+        <h3 style="color: white;">Just Added </h3>
+        <div class="col-12 ">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>kismis</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>ki</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="" width="100%">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="Nikon">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Play Station">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Macbook">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Speaker">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Galaxy">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="iPhone">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Canon">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Pixel">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Watch">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bgimg">
+      <div class="container">
+        <h3 style="color: white;">Just Added </h3>
+        <div class="col-12 ">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>kismis</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                        <div class="img-box">
+                          <img src="/imgs/kishmis.jpg" class="img-fluid" alt="" height="300px">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>ki</h4>
+                          <div class="star-rating">
+                            <ul class="list-inline">
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="btn btn-primary">Watch</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="" width="100%">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/srikanto.jpg" class="img-fluid" alt="Nikon">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Play Station">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Macbook">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Speaker">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Galaxy">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="iPhone">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Canon">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Pixel">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                        <img src="/imgs/kishmis.jpg" class="img-fluid" alt="Watch">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>srikanto</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="line" class="text-muted"></div>
+    <div class="row footer">
+      <div class="col-md-2 col-sm-12 pl-1 ml-5 mt-5">
+        <a href="https://www.hoichoi.tv/"><img src="/imgs/hoichoi white logo.png" alt="" height="70px"></a>
+       <div class="logo mt-5 pl-2">
+        <a href="https://www.facebook.com/hoichoitv"><i class="fa-brands fa-facebook"></i></a></i>
+        <a href="https://x.com/hoichoitv"><i class="fa-brands fa-x-twitter"></i></a></i>
+        <a href="https://www.instagram.com/hoichoi.tv/"><i class="fa-brands fa-instagram"></i></a></i>
+        <a href="https://www.linkedin.com/company/hoichoitv"><i class="fa-brands fa-linkedin"></i></a></i>
+        <a href="https://www.whatsapp.com/channel/0029Va6nSRuFCCoag67Xuh1l"><i class="fa-brands fa-whatsapp"></i></a></i>
+       </div>
+      </div>
+      <div class="col-md-2 col-sm-12 pl-5 ml-2 pt-5 ">
+        <h5>EXPLORE </h5>
+        <div class="text-muted">
+          <h6>Latest Shows</h6>
+          <h6>Latest Movies</h6>
+          <h6>Upcoming on hoichoi</h6>
+          <h6>All Shows</h6>
+          <h6>All Movies</h6>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12 pl-4 pt-5">
+        <h5>POPULAR SHOWS</h5>
+        <div class="text-muted">
+          <h6>Parineeta</h6>
+          <h6>Advocate Achinta Aich</h6>
+          <h6>lojja</h6>
+          <h6>Durgo Rawhoshyo</h6>
+          <h6>Eken Babu</h6>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12 ml-2 pt-5">
+        <h5>POPULAR MOVIES</h5>
+        <div class="text-muted">
+          <h6>Dawshom Awbotaar</h6>
+          <h6>Raktabeej</h6>
+          <h6>Pradhan</h6>
+          <h6>Belashuru</h6>
+          <h6>Bogla Mama</h6>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12 ml-2 pt-5">
+        <h5>COMPANY</h5>
+        <div class="text-muted">
+          <h6>About Us</h6>
+          <h6>Privacy Policy</h6>
+          <h6>Terms of Services</h6>
+          <h6>Content Grievance</h6>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-12 ml-2 pt-5">
+        <h5>CONNECT</h5>
+        <div class="text-muted">
+          <h6>Support </h6>
+          <h6> Redeem</h6>
+          <h6>Submit Your Story</h6>
+          <h6>hoichoi.tech</h6>
+        </div>
+      </div>
+      <p class="Copyright"> Copyright © 2024 hoichoi</p>
+    </div>
+    <body>
+      <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+        #login {
+          padding: 15px 25px;
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+          border: none;
+        }
+        .login-page {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          position: fixed;
+          background: rgb(0, 0, 0, 0.7);
+          z-index: 10;
+          justify-items: center;
+          display: none;
+        }
+        .login-page form {
+          margin-top: 90px;
+          display: block;
+          height: 450px;
+          width: 500px;
+          background: #15161A;
+          border-radius: 30px;
+          justify-items: center;
+          justify-content: center;
+        }
+        form input {
+          margin: 0 0 20px 0;
+          padding: 0 0 0 5px;
+          height: 40px;
+          width: 400px;
+          border: none;
+          border-radius: 10px;
+        }
+        form button{
+          height: 40px;
+          width: 400px;
+          border: none;
+          background-color: red;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .login{
+        color: #fff;
+        padding-right: 100px;
+        margin-right: 90px;
+        padding-left: 50px;
+        font-size: 35px;
+        padding-top: 30px;
+        }
+        #signup {
+        color: #fff;
+        padding-left: 200px;
+        margin-bottom: 80px;
+        margin-top: -50px;
+        font-size:35px;
+        }
+        .button{
+          height: 40px;
+        }
+        p{
+          color: #fff;
+          font-size: 15px;
+        }
+       #icon{
+        padding-left: 100px;
+       } 
+        a{
+          color:red;
+        }
+      </style>
+      <div class="login-page" id="loginPage">
+        <form action="">
+          
+         <a href=""> <h1 class="login">Login<h1></a>
+          <a href=""><h1 id="signup">signup</h1></a>
+          <div class="signup">
+            <p>Mobile number</p>
+              <center>
+                <input type="text">
+              </center>
+              <button>Get OTP</button>
+              <center><p class=" text-muted mt-3">Or Continue With</p></center>
+              <div class="text-muted" id="icon">
+                <i class="fa-solid fa-envelope"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-apple"></i>
+              <p class="mt-3">Don't have an account? <span><a href="">Sign up</a></span></p>
+              </div>
+          </div>
+        </form>
+      </div>
+      <script src="index.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>
+</html>
